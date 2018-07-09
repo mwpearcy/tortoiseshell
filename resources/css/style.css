@@ -1,0 +1,296 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+
+/* HEADER / MAIN BANNER */
+
+#banner {
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  height: 31rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#banner960 {
+  width: 960px;
+  diplay: flex;
+  margin-top: 1rem;
+}
+
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  background-color: cadetblue;
+}
+
+#logotitle {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logotitle img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+#logotitle h1 {
+  font-size: 1rem;
+  color: white;
+}
+
+nav {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 2rem 1rem;
+}
+
+#menu {
+  display: none;
+  margin: 2rem 1rem;
+}
+
+#banner1032 {
+  width: 1032px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10rem auto;
+}
+
+#bannertext h2 {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+}
+
+/* ICON SECTION */
+
+#iconsection {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  margin: 3rem 5rem;
+}
+
+#paper {
+  width: 3.5rem;
+}
+
+#ruler,
+#truck {
+  width: 5rem;
+}
+
+.icontext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* INFO SECTION */
+
+#info {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.infoblock {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  margin-right: 5%;
+}
+
+.infoblock h4 {
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  width: 10rem;
+}
+
+/* FOOTER */
+
+#footer960 {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  width: 960px;
+  display: inline-flex;
+  align-items: center;
+  background-color: azure;
+}
+
+#footerlogo {
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet */
+
+@media only screen and (max-width : 960px) {
+
+  #banner {
+    height: 22rem;
+    width: 100%;
+    max-width: 960px;
+  }
+
+  #banner960 {
+    margin-top: 0px;
+    width: 100%;
+    max-width: 960px;
+  }
+
+  #banner1032 {
+    margin-top: 5rem;
+    max-width: 960px;
+    width: 100%;
+  }
+
+  #bannertext h2 {
+    padding: 1.5rem 4rem;
+    font-size: 1.33rem;
+    margin-right: 4rem;
+  }
+
+  header {
+    width: 100%;
+    max-width: 960px;
+  }
+
+  #iconsection {
+    max-width: 960px;
+    width: 100%;
+  }
+
+  .icon {
+    margin: 3rem auto;
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width : 480px) {
+
+  #logotitle h1 {
+    display: none;
+  }
+
+  #banner960 nav {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #banner {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  #banner1032 {
+    width: 100%;
+    margin-top: 9rem;
+  }
+
+  #bannertext h2 {
+    padding: 0.75rem 3rem;
+    margin-right: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #bannertext {
+    width: 100%;
+  }
+
+  header {
+    height: 3.5rem;
+  }
+
+  #iconsection {
+    margin: 3.77rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon {
+    margin: 1.54rem auto;
+  }
+
+  #info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoblock {
+    margin-top: 0;
+    margin-bottom: 4rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .infoblock h4 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .infoblock p {
+    width: 90%;
+    font-size: 0.77rem;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  #footerlogo {
+    margin: 4rem 0;
+  }
+
+}
